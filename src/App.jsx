@@ -18,10 +18,11 @@ useGSAP(() => {
     gsap.set(growingSpan.current, {
       top: e.clientY,
       left: e.clientX,
+      backgroundColor: 'red'
     })
 
     gsap.to(growingSpan.current, {
-      scale: 1000,
+      scale: 3000,
       duration: 2,
       ease: 'power2.inOut',
       onComplete: () => {
@@ -30,13 +31,8 @@ useGSAP(() => {
           clearProps: 'all'
         })
       }
-      
-      
     })
   })
-
-  
-
 })
 
 
@@ -44,7 +40,7 @@ useGSAP(() => {
     <>
     <span
     ref={growingSpan}
-    className='growing block rounded-full fixed left-0 top-0 block w-5 h-5'
+    className='growing block rounded-full fixed left-0 top-0 block w-5 h-5 bg-red-500'
     ></span>
 
     <div className="bg-black">
