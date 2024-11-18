@@ -30,6 +30,8 @@ useGSAP(() => {
           clearProps: 'all'
         })
       }
+      
+      
     })
   })
 
@@ -42,7 +44,7 @@ useGSAP(() => {
     <>
     <span
     ref={growingSpan}
-    className='growing block rounded-full fixed left-[-20px] top-[-20px] block w-5 h-5'
+    className='growing block rounded-full fixed left-0 top-0 block w-5 h-5'
     ></span>
 
     <div className="bg-black">
